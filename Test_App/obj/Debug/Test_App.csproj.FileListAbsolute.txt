@@ -132,3 +132,4 @@ C:\Users\Ivan\Desktop\Test_App\Test_App\bin\ru\System.Web.WebPages.Deployment.re
 C:\Users\Ivan\Desktop\Test_App\Test_App\bin\ru\System.Web.WebPages.Razor.resources.dll
 C:\Users\Ivan\Desktop\Test_App\Test_App\obj\Debug\Test_App.dll
 C:\Users\Ivan\Desktop\Test_App\Test_App\obj\Debug\Test_App.pdb
+C:\Users\Ivan\Desktop\Test_App\Test_App\obj\Debug\Test_App.csprojResolveAssemblyReference.cache
