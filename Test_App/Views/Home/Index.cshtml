@@ -1,0 +1,52 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">ASP.NET Web API</a></p>
+        </div>
+    </div>
+   <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+        <script src="~/Scripts/angular-route.js"></script> 
+    <script src="~/app/app.module.js"></script>
+      <script src="~/app/Services.js"></script>
+     <script src="~/app/Controllers/TestController.js"></script>
+ 
+</header>
+
+<div id="body" data-ng-app="APIModule"
+   >
+    <div id="controller"  ng-controller="APIController">
+<div id="file_count"  ><h3>Файли</h3>
+    <table>
+    <tr  bgcolor="#C0C0C0"><td><label>менші 10мб</label></td>
+  <td ><label>10мб-50мб</label></td>
+    <td><label>більші 100мб</label></td></tr>
+        <tbody >
+        <tr  >
+            <td style="border:1px solid black; text-align:center" data-ng-repeat="kill in Kills track by $index">
+                {{kill}}
+            </td>
+        </tr>
+            </tbody>
+</table>
+    <div id="current_directory">
+        <span> поточна директорія: {{Directories.Path}}</span>
+     
+    </div>
+
+    <div id="prob"> <span></span></div>
+    <div id="files and directories" >
+  
+      
+        <a data-ng-repeat="Test in Directories.PidDerictories"  href="#"   data-ng-click="Change(Test);"></br>{{Test}}</a>
+         <a data-ng-repeat="File in Directories.Files" href="#"></br>{{File}}</a>
+       
+       
+    </div>
+    </div>
+</div>
+   
+      </div>    
+
+
